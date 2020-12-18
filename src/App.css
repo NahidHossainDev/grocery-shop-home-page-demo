@@ -1,38 +1,210 @@
-.App {
+.container{
+  max-width: 1400px;
+}
+.container-margin{
+  margin: 100px 0;
+}
+.top-header{
+  background-color: #f6f9ff;
+}
+
+.nav-1{
+  position: sticky;
+  top:0;
+  z-index: 999;
+  background-color: white;
+  box-shadow: 3px 3px 3px lightgray;
+}
+.nav-container2 li{
+  list-style: none;
+}
+.nav-item-bg-1{
+  background-color: #252525;
+}
+.nav-item-bg{
+  background-color: #252525;
+  clip-path: polygon(100% 0, 93% 48%, 100% 100%, 0 100%, 0 0);
+}
+/** Top carousel **/
+.carousel-img{
+  width: 100%;
+  height:350px;
+}
+.features-item h5{
+  margin-bottom: 0;
+  color: #f96f11;
+}
+.features-item p{
+  margin: 0;
+}
+/**** Best Seller ****/
+.best-seller-card{
+  width: 250px;
+  padding:15px;
+  height: 360px;
+}
+.heart-default{
+  color:gray;
+}
+.heart-red{
+  color: #ff0000;
+}
+/**** Top product  ****/
+.top-pro-card{
+  border: 1px solid #00ad4c; 
+  border-radius:10px;
+  margin-bottom: 100px;
+}
+.top-pro-card .pro-img{
+  width: 180px;
+  height: 260px;
+  padding: 20px;
+  margin: auto;
+}
+.pro-detail{
+  padding:20px 30px;
+  margin: 60px;
   text-align: center;
+  position: absolute;
+  top:250px;
+  background: white;
+}
+.add-btn{
+  background: #252525;
+  color:white;
+  border:none;
+  padding:5px;
+  width:135px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.plus-btn{
+  background: #111111;
+  color:white;
+  border:none;
+  padding:5px 10px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/****  Service card ****/
+.service-card{
+  width:250px;
+  margin:0 auto;
+}
+.service-card img{
+  height:200px;
+  width: 200px;
+  border-radius: 50%;
+  margin:auto;
+}
+.star-container{
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.star{
+  position: absolute;
+  bottom:0;
+  left:0;
+  right: 0;
+  background-color: rgba(0, 0, 0,0.7);
+}
+.star-clr{
+  color:lightgray;
+}
+.star-rating-clr{
+  color:orange;
+}
+/**** video ****/
+.video-detail img{
+  display: block;
+}
+.video-detail .right-quote{
+  transform: rotate(180deg);
+  margin-left: auto;
+}
+.review{
+  background-color: #f8faff;
+}
+.review h2 {
+   position: relative;
+  /* text-decoration-color: #3cb878; */
+}
+.review h2::after{
+  position: absolute;
+  content:"";
+  height: 3px;
+  bottom: -4px;
+  margin: 0 auto;
+	left: 0;
+  right: 0;
+	width: 280px;
+	background: #3cb878;;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*** Articles ***/
+.articles .card{
+  box-shadow: 0px 5px 10px rgb(228, 228, 228);
+  border-radius: 10px;
+}
+.article .card p{
+  border-top: 1px solid gray ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/****** Footer ******/
+
+.footer-info{
+  margin:200px 0;
+  border: 1px solid gray;
+}
+.footer-info h5{
+  clip-path: polygon(0 1%, 100% 0, 90% 100%, 0% 100%);
+  background: rgb(77, 77, 77);
   color: white;
+  display: inline-block;
+  padding: 10px 50px 10px 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.footer {
+  background: #f6fef6;
+  position: relative;
+  padding-top: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-detail p{
+  font-weight: bold;
+}
+.footer-detail ul{
+  margin: 0;
+  padding: 0;
+}
+.footer-detail ul li{
+  list-style: none;
+}
+.footer-detail ul li a{
+  color: black;
+  line-height: 2.5;
+}
+.footer-detail a{
+  margin-right: 20px;
+}
+.copy-write{
+  background: #292929;
+  color:white;
+  padding: 10px 0;
+}
+.payment-icon{
+  padding:0px 20px;
+  background-color: white;
+  box-shadow: 0px 10px 10px#def8de;
+  border-radius: 7px;
+  display: inline-block;
+  min-width: 1150px;
+  position: absolute;
+  top:-70px;
+  left: 50%;
+  transform: translateX(-50%)
+}
+.payment-icon h6,
+.payment-icon img{
+  margin:35px;
 }
